@@ -8,6 +8,6 @@ interface Props {
 }
 
 export async function GET(request: NextRequest, { params }: Props) {
-  const endpoint = params.kindAuth;
+  const endpoint = params.kindAuth as AuthEndpoints;
   return handleAuth(request, endpoint);
 }
