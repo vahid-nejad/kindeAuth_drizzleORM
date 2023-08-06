@@ -1,5 +1,4 @@
 import { LoginLink, LogoutLink, getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
-import React, { use } from "react";
 
 interface Props {
   className?: string;
